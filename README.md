@@ -3,7 +3,10 @@ QAonMilitaryKG，QaSystem based on military knowledge graph that stores in mongo
 # 项目背景
 # 项目介绍
 # 项目结构
-# 数据：
+![image](https://github.com/liuhuanyong/QAonMilitaryKG/blob/master/image/schema.png)
+
+
+# 数据样式：
 ![image](https://github.com/liuhuanyong/QAonMilitaryKG/blob/master/image/data_sample1.png)
 ![image](https://github.com/liuhuanyong/QAonMilitaryKG/blob/master/image/data_sample2.png)
 
