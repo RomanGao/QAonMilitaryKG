@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d73eeac-bcfb-4439-a5bc-734bf782761e" name="Default" comment="" />
+    <list default="true" id="7d73eeac-bcfb-4439-a5bc-734bf782761e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +35,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="py" value="3" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="2" />
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -53,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collect_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1087">
-              <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+            <state relative-caret-position="105">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="e#16#25#0" expanded="true" />
               </folding>
@@ -63,28 +65,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/militarygraph.py">
+        <entry file="file://$PROJECT_DIR$/military_qa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2758">
-              <caret line="567" column="48" lean-forward="true" selection-start-line="567" selection-start-column="48" selection-end-line="567" selection-end-column="48" />
-              <folding>
-                <element signature="e#144#153#0" expanded="true" />
-                <marker date="1556728777011" expanded="true" signature="13604:13634" ph="..." />
-                <marker date="1556728777011" expanded="true" signature="14921:14926" ph="..." />
-                <marker date="1556728777011" expanded="true" signature="15186:15279" ph="..." />
-                <marker date="1556728777011" expanded="true" signature="29015:29043" ph="..." />
-                <marker date="1556728777011" expanded="true" signature="29132:29246" ph="..." />
-                <marker date="1556728777011" expanded="true" signature="30060:30088" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit.txt">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="-3353">
-              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+            <state relative-caret-position="903">
+              <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -128,6 +112,9 @@
       <find>print</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -147,6 +134,7 @@
     <option name="width" value="1680" />
     <option name="height" value="971" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -344,7 +332,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0596745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0596745" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -387,16 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collect_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1087">
-          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insert_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -413,13 +391,24 @@
           <caret line="567" column="48" lean-forward="true" selection-start-line="567" selection-start-column="48" selection-end-line="567" selection-end-column="48" />
           <folding>
             <element signature="e#144#153#0" expanded="true" />
-            <marker date="1556728777011" expanded="true" signature="13604:13634" ph="..." />
-            <marker date="1556728777011" expanded="true" signature="14921:14926" ph="..." />
-            <marker date="1556728777011" expanded="true" signature="15186:15279" ph="..." />
-            <marker date="1556728777011" expanded="true" signature="29015:29043" ph="..." />
-            <marker date="1556728777011" expanded="true" signature="29132:29246" ph="..." />
-            <marker date="1556728777011" expanded="true" signature="30060:30088" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collect_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/military_qa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
         </state>
       </provider>
     </entry>
