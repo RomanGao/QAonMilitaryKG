@@ -337,14 +337,14 @@ class MilitaryGraph:
         parser_dict['n_units'] = [wd for wd,flag in wds if flag == 'n_unit']
         parser_dict['n_weapons'] = [wd for wd,flag in wds if flag == 'n_weapon']
         parser_dict['pattern'] = [flag for wd, flag in wds if flag in ['n_attr', 'n_time', 'n_big', 'n_small', 'n_unit', 'n_country', 'n_compare', 'n_most', 'n_weapon']]
-        parser_dict['wds'] = wds
+        # parser_dict['wds'] = wds
         return parser_dict
 
     '''答案搜索'''
     def search_answer(self, parser_dict):
-        print(parser_dict)
+        print('step1:问句解析 >>', parser_dict)
         pattern = parser_dict['pattern']
-        print(pattern)
+        print('step2:查询模板 >>',pattern)
         search_data = []
         condition = {}
         targets = ['名称']
@@ -425,6 +425,7 @@ class MilitaryGraph:
             ['n_country','n_weapon', 'n_attr', 'n_weapon', 'n_attr'],
             ['n_country','n_weapon', 'n_attr', 'n_country','n_weapon', 'n_attr'],
             ['n_weapon', 'n_attr', 'n_attr', 'n_weapon', 'n_attr'],
+            ['n_weapon', 'n_attr', 'n_attr', 'n_weapon', 'n_attr', 'n_attr'],
             ['n_country','n_weapon', 'n_attr', 'n_attr', 'n_weapon', 'n_attr'],
             ['n_country','n_weapon', 'n_attr', 'n_country',' n_weapon', 'n_attr', 'n_attr'],
             ['n_country','n_weapon', 'n_attr', 'n_attr', 'n_weapon', 'n_attr', 'n_attr'],
@@ -438,8 +439,8 @@ class MilitaryGraph:
             n_weapons = [self.weapon_dict.get(weapon) for weapon in parser_dict.get('n_weapons')]
             n1_weapon = n_weapons[0]
             n2_weapon = n_weapons[1]
-            targets1 = [self.attribute_dict.get(weapon) for indx, weapon in enumerate(parser_dict.get('n_attrs')) if indx < len(n_indxes)]
-            targets2 = [self.attribute_dict.get(weapon) for indx, weapon in enumerate(parser_dict.get('n_attrs')) if indx >= len(n_indxes)]
+            targets1 = [self.attribute_dict.get(weapon) for indx, weapon in enumerate(parser_dict.get('n_attrs')) if indx < n_indxes[1]-1]
+            targets2 = [self.attribute_dict.get(weapon) for indx, weapon in enumerate(parser_dict.get('n_attrs')) if indx >= n_indxes[1]-1]
             condition1 = {'名称': n1_weapon}
             condition2 = {'名称': n2_weapon}
             search_data.append({'condition':condition1, 'targets': targets1})
@@ -578,10 +579,9 @@ class MilitaryGraph:
         parser_dict = self.question_parser(question)
         results = self.search_answer(parser_dict)
         if results == [[]]:
-            print('sorry, do not know the answer yet...')
+            print('小勇：对不起，目前暂时还无法回答此类问题...')
         else:
-            print('find %s result:'% len(results))
-            print('answer detail:')
+            print('小勇：共找到%s个答案， 下面是具体明细：'% len(results))
             for result in results:
                 print(result)
         return
@@ -589,5 +589,5 @@ class MilitaryGraph:
 if __name__ == '__main__':
     handler = MilitaryGraph()
     while 1:
-        question = input("enter an question to parser:\n")
+        question = input("用户：").strip()
         handler.qa_main(question)
