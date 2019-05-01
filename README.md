@@ -1,5 +1,5 @@
 # QAonMilitaryKG
-QAonMilitaryKG，QaSystem based on military knowledge graph that stores in mongodb which is different from the previous one, 基于mongodb存储的军事领域知识图谱问答项目，该项目不使用图数据库进行存储，通过jibe进行问句解析，问句实体项识别，基于查询模板完成多类问题的查询，主要是提供一种工业界的问答思想demo。
+QAonMilitaryKG，QaSystem based on military knowledge graph that stores in mongodb which is different from the previous one, 基于mongodb存储的军事领域知识图谱问答项目，包括飞行器、太空装备等8大类，100余小类，共计5800项的军事武器知识库，该项目不使用图数据库进行存储，通过jieba进行问句解析，问句实体项识别，基于查询模板完成多类问题的查询，主要是提供一种工业界的问答思想demo。
 # 项目背景
 # 项目介绍
 # 项目结构
